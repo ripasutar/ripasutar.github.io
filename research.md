@@ -1,9 +1,7 @@
 ---
-layout: default
-title: Research & Publications
+title: "Research & Publications"
+permalink: /research/
 ---
-
-# Research & Publications
 
 ## Research Interests
 
