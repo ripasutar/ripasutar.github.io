@@ -1,0 +1,11 @@
+title: Ripa Sutar
+description: Personal academic website of Ripa Sutar, PhD Student.
+theme: minima
+
+header_pages:
+  - research.md
+  - teaching.md
+  - cv.md
+  - contact.md
+
+markdown: kramdown
