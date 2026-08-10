@@ -1,9 +1,7 @@
 ---
-layout: default
-title: Contact
+title: "Contact"
+permalink: /contact/
 ---
-
-# Contact
 
 - Email: [your.email@university.edu](mailto:your.email@university.edu)
 - LinkedIn: [linkedin.com/in/ripasutar](https://www.linkedin.com/in/ripasutar/)
