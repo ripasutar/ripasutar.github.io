@@ -227,3 +227,7 @@ h1, h2, h3 { line-height: 1.15; margin: 0 0 0.5em; }
 
 
 .membership-grid { grid-template-columns: 1fr; max-width: 460px; }
+
+
+.edu-link { display: inline-block; margin-top: 14px; color: var(--primary-dark); font-weight: 600; font-size: 0.88rem; }
+.edu-link:hover { color: var(--primary); text-decoration: underline; }
