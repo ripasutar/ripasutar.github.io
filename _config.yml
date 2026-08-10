@@ -1,11 +1,43 @@
 title: Ripa Sutar
-description: Personal academic website of Ripa Sutar, PhD Student.
-theme: minima
+name: Ripa Sutar
+email: your.email@university.edu
+description: >-
+  Personal academic website of Ripa Sutar, PhD Student.
+url: "https://ripasutar.github.io"
 
-header_pages:
-  - research.md
-  - teaching.md
-  - cv.md
-  - contact.md
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "air"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
 
 markdown: kramdown
+
+author:
+  name: "Ripa Sutar"
+  avatar: ""
+  bio: "PhD Student in [Department/Field] at [University Name]"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/ripasutar/"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=Mj_0AJoAAAAJ&hl=en"
+
+footer:
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/ripasutar/"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=Mj_0AJoAAAAJ&hl=en"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      author_profile: true
