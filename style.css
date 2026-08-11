@@ -236,3 +236,17 @@ h1, h2, h3 { line-height: 1.15; margin: 0 0 0.5em; }
 .cert-card h3 { font-size: 0.98rem; margin-bottom: 6px; }
 @media (max-width: 900px) { .cert-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) { .cert-grid { grid-template-columns: 1fr; } }
+
+
+:root { --hero-accent: #ffb545; }
+.hero { background: #0b0d12; background-image: radial-gradient(circle at 15% 20%, rgba(255,181,69,0.18), transparent 45%), radial-gradient(circle at 85% 75%, rgba(47,90,255,0.18), transparent 50%); }
+.hero-hello { color: var(--hero-accent); font-weight: 800; letter-spacing: 0.14em; font-size: 0.9rem; margin: 0 0 14px; text-transform: uppercase; }
+.hero h1 { color: #fff; }
+.hero h1 .accent { color: var(--hero-accent); }
+.hero .role { color: var(--hero-accent); }
+.hero-quote { color: #e5e9f0; font-style: italic; font-weight: 600; font-size: 1.15rem; margin: 4px 0 26px; }
+.hero .pill { background: rgba(255,255,255,0.08); color: #e5e9f0; }
+.hero .lede { color: #a7b0c0; }
+.hero .btn-outline { border-color: rgba(255,255,255,0.28); color: #fff; background: transparent; }
+.hero .btn-outline:hover { border-color: var(--hero-accent); color: var(--hero-accent); }
+.hero .tool-pills span { border-color: rgba(255,255,255,0.22); color: #cbd5e1; }
