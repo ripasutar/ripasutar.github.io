@@ -231,3 +231,8 @@ h1, h2, h3 { line-height: 1.15; margin: 0 0 0.5em; }
 
 .edu-link { display: inline-block; margin-top: 14px; color: var(--primary-dark); font-weight: 600; font-size: 0.88rem; }
 .edu-link:hover { color: var(--primary); text-decoration: underline; }
+.cert-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 40px; }
+.cert-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
+.cert-card h3 { font-size: 0.98rem; margin-bottom: 6px; }
+@media (max-width: 900px) { .cert-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .cert-grid { grid-template-columns: 1fr; } }
