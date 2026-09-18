@@ -26,3 +26,23 @@ if (navToggle && navLinks) {
     link.addEventListener('click', () => navLinks.classList.remove('open'));
   });
 }
+
+// Conference gallery lightbox
+const lightbox = document.getElementById('lightbox');
+if (lightbox) {
+  const lbImg = lightbox.querySelector('img');
+  const lbCap = lightbox.querySelector('.lightbox-caption');
+  const closeLb = () => { lightbox.hidden = true; lbImg.src = ''; };
+  document.querySelectorAll('.lightbox-link').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const img = link.querySelector('img');
+      lbImg.src = link.href; lbImg.alt = img.alt;
+      const cap = link.parentElement.querySelector('figcaption');
+      lbCap.textContent = cap ? cap.textContent : '';
+      lightbox.hidden = false;
+    });
+  });
+  lightbox.addEventListener('click', (e) => { if (e.target !== lbImg) closeLb(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLb(); });
+}
